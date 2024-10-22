@@ -27,45 +27,51 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          // Main Title Area
-          Padding(
-            padding: const EdgeInsets.only(top: 150.0),
-            child: Column(
-              children: const [
-                Text(
-                  'Currency Converter',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
+          Center(
+            child: const Column(
+              children: [
+                // Main Title Area
+                Padding(
+                  padding: EdgeInsets.only(top: 150.0),
+                  child: Column(
+                    children: [
+                      Text(
+                        'Currency Converter',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        'Live API Exchange Rates',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.white70,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
-                SizedBox(height: 10),
-                Text(
-                  'Live API Exchanges',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w400,
-                    color: Colors.white70,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          // Bottom Bar Text
-          Padding(
-            padding: const EdgeInsets.only(bottom: 40.0),
-            child: Column(
-              children: const [
-                Text(
-                  'Project by Jawad Alam',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w300,
-                    color: Colors.white70,
+                // Bottom Bar Text
+                Padding(
+                  padding: EdgeInsets.only(bottom: 40.0),
+                  child: Column(
+                    children: [
+                      Text(
+                        'Project by Jawad Alam',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w300,
+                          color: Colors.white70,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
